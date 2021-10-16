@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    
+}
+
+.navbar{
+    background-color: #e6e6e6 !important ;
+}
+#navbarSupportedContent :hover{
+    color: crimson !important;
+   
+    
+}
+.logo img{
+    height: 40px !important;
+    width: 50px !important;
+    border-radius: 15% !important;
+    padding: 0 5px !important;
+}
+.icon{
+    padding: 0 10px !important;
+    color: grey !important;
+}
+
+
+
+
+.carousel-item img{
+    height: 85vh!important;
+    cursor: pointer;
+    
+}
+.carousel-indicators button {
+    width: 20px !important;
+    color:red;
+    height: 20px !important;
+    border-radius: 50%;
+    background-color: red !important;
+    
+}
+.carousel-indicators button.active{
+    width: 40px !important;
+    background-color: red !important;
+    color: red !important;
+    border-radius: 40% !important;
+    height: 20px !important;
+}
+  
+/* blog post  */
+.blog__post{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    justify-content: space-evenly !important;
+    padding:  50px 60px;
+   
+}
+.blog__post::-webkit-scrollbar{
+    display:none;
+}
+.blog__item{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+    padding:  50px 0 0 0 !important ;
+    
+}
+ /* NOvels post */
+ .Novel{
+     position: absolute !important;
+     margin: auto !important;
+     padding: 0 2px !important;
+ }
+ .blog__novel{
+     text-align: center;
+ }
+ .novel__cards{
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 20px;
+ }
+ .card{
+    box-shadow: 4px 3px 3px 3px gray;
+ }
+  
+.card-body  :hover{
+    color: cyan;
+    cursor: pointer;
+
+}
+.featured__novel{
+    text-align: center;
+    margin-top: 5px;
+}
+.featured__novel::-webkit-scrollbar{
+    display: none;
+}
+.fe__novels{
+    display: flex !important;
+    padding: 50px 60px !important;
+
+    overflow-x: scroll !important ;
+    overflow-y: hidden !important;
+    flex-wrap: nowrap !important;
+   
+  
+   
+}
+
+.f_novel{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+   padding: 10px 20px;
+    flex-wrap: nowrap;
+   
+   
+}
+.f_novel::-webkit-scrollbar{
+    display: none;}
+.f_novel img{
+    border-radius: 10%;
+
+}
+@media (max-width:600px){
+    .blog__novel{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .blogs__novel {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (max-width: 967px) {
+    .blogs__novel {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
